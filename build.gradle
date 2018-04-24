@@ -1,0 +1,34 @@
+apply plugin: 'java'
+apply plugin: 'war'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories 
+{
+    mavenCentral()
+}
+
+compileJava
+{
+    options.debug = true
+}
+
+dependencies
+{
+    providedCompile fileTree(dir: 'C:\\work\\program\\glassfish5\\glassfish\\modules', include: '*.jar')
+}
+
+test 
+{
+    testLogging.showStandardStreams = true
+}
+
+tasks.withType(JavaCompile) 
+{
+    options.encoding = 'UTF-8'
+}
+
+war
+{
+    archiveName = 'web.war'
+}
