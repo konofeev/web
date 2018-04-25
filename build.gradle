@@ -15,7 +15,7 @@ compileJava
 
 dependencies
 {
-    providedCompile fileTree(dir: 'C:\\work\\program\\glassfish5\\glassfish\\modules', include: '*.jar')
+    providedCompile fileTree(dir: "$System.env.GLASSFISH_HOME" + "\\glassfish\\modules", include: "*.jar")
 }
 
 test 
