@@ -1,0 +1,27 @@
+body
+{
+    background-color: rgb(60,80,100);
+    color: rgb(201,201,201);
+    text-shadow: 1px 1px 1px black;
+}
+
+.article
+{
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 90%;
+}
+
+.title
+{
+    text-align: center;
+    font-size: 150%;
+    color: #aaf;
+}
+
+h2
+{
+    text-align: center;
+}
