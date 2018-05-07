@@ -6,15 +6,17 @@ package entity;
 public class Article
 {
     private String title;
+    private String description;
 
     /**
      * Конструктор
      *
      * @param title Заголовок
      */
-    public Article(String title)
+    public Article(String title, String description)
     {
         this.title = title;
+        this.description = description;
     }
 
     /**
@@ -23,5 +25,13 @@ public class Article
     public String getTitle()
     {
         return title;
+    }
+
+    /**
+     * Получить описание
+     */
+    public String getDescription()
+    {
+        return description;
     }
 }

@@ -10,14 +10,14 @@
         <h:outputStylesheet name="main.css" />
     </h:head>
     <body>
-
-        <h2>Программирование</h2>
-
         <div id="articles">
             <ui:repeat value="#{mainController.articles.articles}" var="article">
                 <div class="article">
                     <div class="title">
                         #{article.title}
+                    </div>
+                    <div class="description">
+                        #{article.description}
                     </div>
                 </div>
             </ui:repeat>

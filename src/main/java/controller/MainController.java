@@ -1,17 +1,17 @@
 package controller;
 
-import entity.Articles;
+import entity.MockArticle;
 import javax.inject.Named;
 
 @Named
 public class MainController
 {
-    private Articles articles = new Articles();
+    private MockArticle articles = new MockArticle();
 
     /**
      * Получить статьи
      */
-    public Articles getArticles()
+    public MockArticle getArticles()
     {
         return articles;
     }
