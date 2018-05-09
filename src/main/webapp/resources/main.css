@@ -4,24 +4,56 @@ body
     color: #666;
 }
 
-.article
+#articles .article
 {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 15px;
     margin: 15px auto;
-    width: 90%;
+    max-width: 800px;
 }
 
-.title
+#articles .title
 {
     text-align: center;
     font-size: 150%;
-    color: #77f;
+    color: #77c;
+}
+
+#articles .description
+{
+    text-align: justify;
 }
 
 h2
 {
     text-align: center;
     font-size: 200%;
+}
+
+#examples .example
+{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+#examples .title
+{
+    text-align: right;
+    font-size: 100%;
+    color: #a58;
+}
+
+#examples .body
+{
+    font-size: 120%;
+    color: black;
+}
+
+#examples .description
+{
+    font-style: italic;
 }

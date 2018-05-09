@@ -22,5 +22,20 @@
                 </div>
             </ui:repeat>
         </div>
+        <div id="examples">
+            <ui:repeat value="#{mainController.examples.examples}" var="example">
+                <div class="example">
+                    <div class="title">
+                        #{example.title}
+                    </div>
+                    <div class="body">
+                        <pre>#{example.body}</pre>
+                    </div>
+                    <div class="description">
+                        #{example.description}
+                    </div>
+                </div>
+            </ui:repeat>
+        </div>
     </body>
 </html>
